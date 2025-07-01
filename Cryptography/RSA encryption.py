@@ -1,4 +1,17 @@
-# 31/10/2024 RSA (Rivest Shamir Adleman) encryptor from scratch to understand RSA better 
+# 31/10/2024 
+# RSA (Rivest-Shamir-Adleman) Encryption Implementation from Scratch
+# Educational implementation demonstrating core RSA cryptographic concepts
+#
+# Features:
+# - Complete prime generation using Sieve of Eratosthenes (up to 2M)
+# - Euclidean algorithm for GCD and coprimality testing
+# - Automatic block splitting for messages larger than modulus
+# - Three security levels (low/medium/high) with different prime sizes
+# - ASCII text encoding with 3-digit padding for consistent block sizes
+# - Interactive encrypt/decrypt interface
+#
+# Note: For educational purposes only - lacks production security features
+# like secure random number generation and proper padding schemes
 
 import random
 import math
