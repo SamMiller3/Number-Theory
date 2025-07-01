@@ -1,5 +1,19 @@
-# SHA 256 implemented from scratch including the bitwise operations, functions and bitwise addition in binary
-# 22/06/2025 
+# SHA 256
+# 22/06/2025
+# SHA-256 Cryptographic Hash Function - Complete Implementation from Scratch
+# Educational implementation showing every bitwise operation and mathematical step
+#
+# Features:
+# - All bitwise operations (XOR, AND, OR, NOT) implemented manually on binary strings
+# - Complete SHA-256 algorithm: preprocessing, padding, message scheduling, compression
+# - 32-bit modular binary addition with proper carry handling
+# - All SHA-256 functions: choice, majority, sigma rotations implemented from spec
+# - 64 round constants (K) and initial hash values (H) in binary format
+# - Follows official FIPS 180-4 specification exactly
+#
+# Educational value: Makes the "magic" of SHA-256 completely transparent
+# Note: Computationally inefficient - optimised for learning, not performance
+
 
 def right_rotate(A,n): # insert last element into first element and pop last element n times
     for i in range(n):
