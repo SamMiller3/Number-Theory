@@ -1,5 +1,4 @@
-# 31/10/2024 Silly little RSA (Rivest Shamir Adleman) encryptor
-# do not actually use my implementation in practice, mine is light weight so I can actually run it on your pc without crashing
+# 31/10/2024 RSA (Rivest Shamir Adleman) encryptor from scratch to understand RSA better 
 
 import random
 import math
