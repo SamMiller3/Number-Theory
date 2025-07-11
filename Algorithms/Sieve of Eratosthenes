@@ -1,0 +1,21 @@
+#Sieve of Eratosthenes
+import math
+def generate_primes(n):
+
+    sieve = [True]*n
+    sieve[0]=sieve[1]=False
+
+    for i in range(2,math.isqrt(n)):
+        if sieve[i]==True:
+            for j in range((i*i),n,i): # mark all multiples as false
+                sieve[j]=False
+
+    primes=[]
+    for i in range(len(sieve)): # convert boolean values to int
+        if sieve[i]:
+            primes.append(i)
+            
+    return(primes)
+
+n = int(input("up to what number? "))
+print(generate_primes(n))
