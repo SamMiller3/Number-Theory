@@ -1,1 +1,1 @@
-Programs/Projects I have written which involve Number Theory. 
+Number theory related programs I have written including cryptography algorithms such as SHA256, RSA, ECC, AES. Standard number theory algorithms and also Project Euler solutions utilizing number theory
