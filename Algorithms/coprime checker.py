@@ -5,8 +5,8 @@ def highest_common_divisor(a,b):
         a,b=b,a%b
     return(b)
 
-firstNumber=int(input("Enter first integer: "))
-secondNumber=int(input("Enter second integer: "))
+first_number=int(input("Enter first integer: "))
+second_number=int(input("Enter second integer: "))
 
 if highest_common_divisor(max(first_number,second_number),min(first_number,second_number))==1:
     print(True)
