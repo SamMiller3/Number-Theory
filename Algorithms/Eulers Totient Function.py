@@ -5,7 +5,7 @@ def highest_common_divisor(a,b):
         a,b=b,a%b
     return(b)
 
-def isCoprime(a,b):
+def id_coprime(a,b):
     return(highest_common_divisor(a,b)==1)
 
 def totient(n):
