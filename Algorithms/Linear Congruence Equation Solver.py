@@ -12,11 +12,11 @@ def extended_gcd(a,b): # extended euclidean algorithm
     return gcd, x, y
 
 print("Input format: ax = b (mod m) give integers a, b and m.")
-print(f"Only solutions in the set of least residues of modulo {m} will be returned.") 
 print("For example for 75x = 12 (mod 237) x = 76, 155, 234 (mod 237).")
 a = int(input("enter a: "))
 b = int(input("enter b: "))
 m = int(input("enter m: "))
+print(f"Only solutions in the set of least residues of modulo {m} will be returned.") 
 gcd,p,q = extended_gcd(a,m) # use extended euclidean algorithm to solve Bezout's identity
 if b % gcd != 0: # solutions exist if and only if d divides m
     print("No solutions exist to the given equation.")
@@ -31,4 +31,4 @@ else: # otherwise there are d solutions modulo m
     for i in range(gcd):
         solutions.append(str(k))
         k += increment
-    print(f"x = {', '.join(solutions)}. (mod {m})")
+    print(f"x = {', '.join(solutions)} (mod {m}).")
