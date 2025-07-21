@@ -12,6 +12,7 @@ def extended_gcd(a,b): # extended euclidean algorithm
     return gcd, x, y
 
 print("Input format: ax = b (mod m) give integers a, b and m.")
+print(f"Only solutions in the set of least residues of modulo {m} will be returned.") 
 print("For example for 75x = 12 (mod 237) x = 76, 155, 234 (mod 237).")
 a = int(input("enter a: "))
 b = int(input("enter b: "))
